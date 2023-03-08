@@ -1,0 +1,165 @@
+<!DOCTYPE = html> 
+<!--NAME: (Carley Fisher)
+  PROG PURPOSE: Chapter 5 and 6
+-->
+<html lang = "en">
+    <head>
+        <title>Chapter 5: Computer Systems Organization</title>
+    </head>
+<table border="5 style= "text-align:left;" width="560" >
+    <tr style="font-weight; bold: font size: 120%;">
+        <head>
+            <style>
+            body {background-color: 000080;}
+            td   {color: FFFFFF;}
+        li    {color: #FFFFFF;}
+            </style>
+            </head>
+            <body>
+    <td> Chapter  5: Computer Systems Organization</td>
+    
+</tr>
+<tr>
+    <td>Student Name: Carley Fisher</td>
+</tr>
+<tr>
+    <td>Von Neumann computer architecture, 4 major subsystems:</td>
+</tr>
+    <td><ol>
+        <li> Memory</li>
+        <li> Control Unit</li>
+        <li> Arithmetic/Logic Unit (ALU)</li>
+	  <li> Input-Output</li>
+    </tr>
+    <tr></tr>
+    <td>Von Neumann computer architecture, 3 characteristics:</td>
+</tr>
+<td><ol>
+    <li> Four major subsystem called memory, input/output, the arithmetic/logic unit (ALU), and the control unit. The ALU and the control unit are often bundled together in what is called the central processing unit or CPU.</li>
+        <li>The stored program concept, in which the instructions to be executed by the computer are represented as binary values and stores in memory.</li>
+         <li> The sequential executions of instructions, in which one instruction at a time is fetched from memory and passed to the control unit, where it is decoded and executed.</li>
+    </tr>
+    <tr></tr>
+        <td>Computer Archetecture Terms:</td>
+</tr>
+<td><ol>
+    <li> RAM:RAM is a common computing acronym that stands for random-access memory. In essence, RAM is your computer or laptop's short-term memory. It's where the data is stored that your computer processor needs to run your applications and open your files. </li>
+    <li> Cache:A hardware or software component embedded in an application or device memory that automatically and temporarily stores data consumed by the user to reduce the data retrieval time the next time the application or device is accessed.</li>
+<li> Principle of locality: The high likelihood that when a program fetches a piece of data or an instruction:</li>
+<ol>
+<li>It will access that same instruction or piece of data in the very near future.</li>
+<li> It will soon access the instructions or data that are located near that piece of data, where "near" means an address whose numerical value is close to this one. </li>
+</ol>
+        <li> ROM: A special type of random access memory into which information has been prerecorded during manufacture. This information cannot be modified or removed, only fetched.</li>
+<li> Memory Cell Size:Memory cells can be of different sizes: 8 bits, 16 bits, 32 bits, 64 bits. Different sized cells are used to store different types of data.</li>
+<li>Memory Cell Address: a unique identifier used by a device or CPU for data tracking. This binary address is defined by an ordered and finite sequence allowing the CPU to track the location of each memory byte.</li> 
+        <li> Maximum Memory Size: the maximum total RAM that the processor will address. It is also known as the value 2^N</li>
+        <li> Register: A special high-speed storage cell that holds the operands of an arithmetic operation and that, when the operation is complete, holds its results.</li>
+        <li>Fetch:The retrieval of data by a software program, script, or hardware device. </li>
+        <li> Store:A sequence of machine language instructions stores as binary values in memory. </li>
+        <li> Memory Access Time:how long it takes for a character in RAM to be transferred to or from the CPU. </li>
+        <li> DASD: Direct access storage devices (DASDs) are fixed or removable storage devices. </li>
+        <li> Arithmetic and Logic Unit (ALU): The subsystem that perfroms such mathmematical and logical operations such as addition, subrtaction, and comparison for eqaulity.</li>
+        <li> Control Unit: The control unit fetches from memory the next instruction to executed, decode it and execute it by issuing the appropriate command to the ALU. </li>
+                <tr>
+                    <td>Chapter 6</td>
+                </tr>
+                <tr>
+<tr>
+                    <td>Four things the interface between the computer and the hardware does:</td>
+                </tr>
+                <tr>
+                    <td><ol>
+                        <li> Hides from the user the mesy details of the underlying hardware.</li>
+                        <li> Presents information about what is happening in a way that does not require in-depth knowledge of the internal structure of the system.</li>
+                        <li> Allows easy user access to the resources available on this computer</li>
+                        <li> Prevents accidental or intentional damage to hardware, programs and data</li>
+                    <tr>
+                        <td>Responsibilities of systems software:</td>
+                    </tr>
+                    <tr>
+                        <td><ol>
+                            <li> Hides the complex and unimportant (to the user) details of the internal structure of the Von Neumann architecture. </li>
+                            <li> Presents important information to the user in a way that is easy to uderstand.</li>
+                            <li> Allows the user to access machine resources in a simple and effivient way.</li>
+                            <li> Provides a secure and safe environment in which to operate.</li>
+                            <tr>
+                    <td>Terms:</td>
+                </tr>
+<td><ol>
+    <li> Systems Software: Is a collection of computer programs that manage the resources of a computer and facilities access to those resources.</li>
+                                    <li>User Interface: All modern operating systems provide a powerful graphical user interface (GUI) that gives the user intuitive visual overview as well as graphical control of the capabilities and services of the computer. Control of the GUI is typically done with keystrokes, mouse clicks, finger taps, voice activation, or biometrics scans such as fingerprints.</li>
+                                    <li>Language Services: These programs, called assemblers, compliers, and interpreters, allow you to write programs in a high-level, user-oriented language rather than machine language and to execute these programs easily and efficiently. They often include components such as text editors and debuggers.</li>
+                                    <li>Memory Managers: These programs llocate memory space for programs and data and retrieve this memory space when it is no longer needed.</li>
+                                    <li> Information Managers: These programs handle the organization, storage, and retrieval of information on storage devices such as the hard drives, DVD’s, flash drivers, and tapes as well as information stored remotely in data centers. They allow you to organize your information in an efficient high hierarchical manner, using directories, folders, and files and to keep your personal data safe from accidental or intentional misuse.</li>
+                                    <li> i/o Managers:These software packages allow you to easily and efficiently use the many different types of input and output devices that exist on a modern computer system. </li>
+					      <li> Schedualer:This system program keeps a list of programs ready to run on the processor, and it selects the one that will execute next. The scheduler allows you to have several different programs active at a single time, for instance, surfing the web while you are waiting for a file to finish printing. </li>
+ <li> Utilities: These collections of library routines provide a wide range of useful services either to a user or to other system routines. Text editors, online help routines, image and sound applications, and control panels are examples of utility routines. Sometimes these utilities are organized into collections and called program libraries.</li>
+
+ <li> Assembly Language: a low-level symbolic code converted by an assembler. </li>	
+<tr>
+                                <td>Functions of an Operating System:</td>
+                            </tr>
+                            <tr>
+                                <td><ol>
+                                    <li> User interfacce managment.</li>
+<li> Control of access to the system and to data files. </li>
+<li> Program scheduling and activiation. </li>
+<li> Efficient resource allocation. </li>
+<li> Deadlock detection and error detetion. </li>
+<tr>
+                    <td>Powers of 10</td>
+                </tr>
+                <tr>
+<table border="5 style= "text-align:center;" width="560" >
+        <tr style="font-weight; bold: font size: 120%;">
+        <td> Quantity in Bytes </td>
+        <td> Base-10 Value</td>
+        <td>Amount of <br> Textual Information</td>
+    </tr>
+    <tr>
+        <td>1 byte</td>
+        <td>10^0</td>
+        <td> One Character</td>
+    </tr>
+    <tr>
+        <td>1 kilobyte</td>
+        <td> 10^3</td>
+        <td> One typed page</td>
+        </tr>
+    <tr>
+        <td>1 megabyte</td>
+        <td> 10^6</td>
+        <td> Two or three novels</td>
+        </tr>
+     <tr>
+        <td>1 gigabyte</td>
+        <td>10^9</td>
+        <td>A Departmental library <br> or a large personal library</td>
+        </tr>
+    <tr>
+        <td>1 terabyt</td>
+         <td> 10^12</td>
+         <td> The library of a major academic <br> research library</td>
+     </tr>
+     <tr>
+        <td>1 petabyte</td>
+         <td>10^15</td>
+         <td> All printed material in all <br> libraries in North America</td>
+          </tr>
+     <tr>
+        <td>1 exabyte</td>
+         <td> 10^18</td>
+         <td>All words ever printed <br> throughout Human History</td>
+     </tr>
+    <tr>
+        <td>1 zettabyte</td>
+         <td> 10^21</td>
+         <td>As of 2014, the total amount <br> of information stored globally <br> on the World Wide Web <br> was about 4-5 zettabytes</td>
+     </tr>
+    <tr>
+        <td>1 yottabyte</td>
+         <td> 10^24</td>
+         <td>According to an artcile in Gizmodo, <br> a design and technology blog, <br> storing 1 yottabyte of data <br> on hard drives would <br> require 1 million data centers <br> that would fill the states of <br> Rhode Island and Delaware </td>
+     </tr>
+                                   
