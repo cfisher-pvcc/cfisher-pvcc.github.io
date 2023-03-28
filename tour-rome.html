@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang = "en">
+<!--
+    NAME: Carley Fisher
+    DESCRIPTION: This code will find the most of a 5 day Rome Tour.
+-->
+<head>
+    <title>  5-day tour of Rome</title>
+
+    <script type = "text/javascript">
+
+function romatour()
+    {
+    //rates variables
+        var airprice = 1200.00;
+        var hotelprice = 1325.00;
+        var mealprice = 375.00;
+        var bustourprice= 80.00;
+        var activitiesprice= 220.00;
+        var howtopay = "\n\nCredit and debit cards accepted for beach cottage rentals.";
+
+    //data variables
+        var guest = 0;
+        var air = 0;
+        var hotel = 0;
+        var meals = 0;
+        var bustour = 0;
+        var activities= 0;
+        var total = 0;
+
+    //calculations
+         guest = prompt("Enter the number of guests");
+         air = guest * airprice;
+         hotel= hotelprice;
+         meals = guest * mealprice;
+         bustour = guest * bustourprice;
+         activities = guest * activitiesprice
+         total = air + hotel + meals + bustour + activities;
+    
+         alert("\n5 DAY TOUR ROME" +
+               "\n-----------------------------------------" +
+               "\nNumber of night: " + 5 +
+               "\n-----------------------------------------" +
+               "\nAir: " + air +
+               "\n-----------------------------------------" +
+               "\nHotel: " + hotel +
+               "\n-----------------------------------------" +
+               "\nMeals: " + meals +
+               "\n-----------------------------------------" +
+               "\nBus: " + bustour +
+               "\n-----------------------------------------" +
+               "\nActivities: " + activities + 
+               "\n-----------------------------------------" +
+               "\n-----------------------------------------" +
+               "\nTotal:      $" + total + howtopay);
+        document.write("<h1>Total:" +total+ "</h1>");
+    }
+            
+</script>
+</head>
+
+<body style="color:#d32292; background-color: #b48da7;
+        font-family: verdana, ariel, sans-serif; font-size:15px; ">
+        
+    <h1><center>Holiday Roma!</center></h1>
+    <p> <center>Visit Rome with us! <b>Holiday Roma Tours</b> are the most exciting way to visit this ancient 
+        Italian city. Stay in the luxurious <b>Hotel Farnese</b>, enjoy fabulous meals each day, and 
+        visit Rome’s most renowned sites and museums on our <b>Hop On/ Hop Off</b>  busses. Your trip 
+        will also include a night of musical theater at the <b>Teatro Sistina</b>!</center></p>
+
+    <br /><br/>
+    <Center><img src="rome.jpg" /></Center>
+
+    </head>
+    <body style=""color:#ffff00; background-color:#000000; font-family: calibri;">
+    <h1> </h1>
+
+<table border="1" style= "margin-left: auto; margin-right: auto" width="560" >
+        <tr style="font-weight; bold: font size: 120%;">
+         <tr>
+         <th colspan="4">Holiday Tour Dates Roma!</th>
+
+    <tr>
+        <td> <b>Air:</b></td>
+        <td>Round trip airfare from JFK to Rome</td>
+        <td>$1200</td>
+        
+    </tr>
+    <tr>
+        <td><b>Hotel:</b></td>
+        <td> 5 nights in 4-star hotel</td>
+        <td> $265 per night</td>
+        
+    </tr>
+    <tr>
+        <td><b>Meals:</b></td>
+        <td> Includes 5 breakfasts & dinners</td>
+        <td> $75 per day</td>
+        
+     </tr>
+     <tr>
+        <td><b>Bus Tour:</b></td>
+        <td> Hop on/Hop off bus: 3-day pass</td>
+        <td> $80</td>
+        
+    </tr>
+    <tr>
+        <td><b>Activities:</b></td>
+         <td> Includes 1 theatre performance & museum tickets</td>
+         <td> $220</td>
+    <tr>
+    <td colspan = "4"> VAT is included. Alcoholic beverages and tips are not inlcuded.</td>
+    </tr>
+</table>
+<form>
+   <center><input type = "button" value = "Click to calculate Tour Roma tour cost" class
+    onclick = "beachrental()" /></center> 
+</form>
+</html>
+<head>
+    
