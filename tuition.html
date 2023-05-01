@@ -1,0 +1,183 @@
+
+<DOCTYPE html>
+
+
+    <html lang="en">
+
+
+    <!-- Name: Carley Fisher-->
+    <!--date:   -->
+    <!--Class   -->
+    <!-- Program Purpose: This progrm will calculate tcost of tuition -->
+    
+    
+
+
+
+    <head>
+        <script type="text/javascript">
+            function calculatecost() {
+
+                //constants
+                const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', });
+                const tuitionrate_in = 155.00;
+                const institutionalfee_in = 1.75;
+                const studentactivityfee_in = 2.90;
+
+                //input from user
+                var credit_in = document.getElementById('amount').value;
+
+                //Retrieve the user data from the form, and assign the data to input variables
+                //if user does not enter a credit amount, display an error message
+                if (credit_in == '') {
+                    alert("Please enter the number of credits");
+                    return;
+                }
+
+                //calculate each total, constant times number of credits
+                var tuitionTotal = tuitionrate_in * credit_in;
+                document.getElementById('tuition-rate').value = dollar.format(tuitionTotal);
+                var feeTotal = institutionalfee_in * credit_in;
+                document.getElementById('institutional-fee').value = dollar.format(feeTotal);
+                var studentFeeTotal = studentactivityfee_in * credit_in;
+                document.getElementById('student-activity-fee').value = dollar.format(studentFeeTotal);
+                //overall total is sum of pervious totals
+                var overallTotal = tuitionTotal + feeTotal + studentFeeTotal;
+                document.getElementById('total').value = dollar.format(overallTotal);
+
+            }
+        </script>
+
+
+
+
+        <style>
+            body {
+                background-color: #FDAB9F;
+                font-family: calibri, arial, sans-serif;
+            }
+
+
+            h2 {
+                text-align: center;
+            }
+
+
+            table {
+                width: 500x;
+                color: #000000;
+                background-color: #FE7D6A;
+                border: none;
+                font-weight: bold;
+            }
+
+
+            td {
+                text-align: right;
+                padding: 10px;
+            }
+
+
+            inout {
+                width: 150px;
+                font-weight: bold;
+            }
+
+
+            input,
+            select {
+                width: 80%;
+                border: none;
+                border-bottom: 1px solid #000000;
+                padding: 10px;
+            }
+        </style>
+
+
+    </head>
+
+
+
+
+    <body>
+
+
+        <form>
+
+
+            <table>
+
+
+                <tr>
+                    <td colspan="2">
+                        <h2>PVCC TUITION & FEES CALCULATOR</h2>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td> Number of Credits:</td>
+
+
+                    <td> <input type="text" id="amount" placeholder="Credits Here" /></td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+
+
+                        <input type="button" value="Calculate Tuition and Fees" class="button"
+                            onclick="calculatecost()" />
+                    </td>
+                    </td>
+
+
+                <tr>
+                    <td><input type="reset"></td>
+                </tr>
+
+
+                <tr style="font-weight:bold; font-size:1.2em; text-align:left;">
+
+
+                    <td> Tuition:</td>
+
+
+                    <td><input type="text" id="tuition-rate" placeholder="0" /></td>
+                </tr>
+
+
+                <td> Institutional fee:</td>
+
+
+                <td><input type="text" id="institutional-fee" placeholder="0" /></td>
+                </tr>
+
+
+                <td> Student activity fee:</td>
+
+
+                <td><input type="text" id="student-activity-fee" placeholder="0" /></td>
+                </tr>
+
+
+                <td> Total:</td>
+
+
+                <td><input type="text" id="total" placeholder="0" /></td>
+                </tr>
+
+
+
+
+            </table>
+
+
+        </form>
+
+
+    </body>
+
+
+    </html>
